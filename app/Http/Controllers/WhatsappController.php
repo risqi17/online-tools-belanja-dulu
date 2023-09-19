@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class WhatsappController extends Controller
 {
@@ -34,7 +35,14 @@ class WhatsappController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $number = $request->number;
+        $temp_number = '62';
+
+        $newNumber = preg_replace('/^0?/', $temp_number, $number);
+
+        $link = 'https://wa.me/'.$newNumber;
+
+        return redirect()->away($link);
     }
 
     /**

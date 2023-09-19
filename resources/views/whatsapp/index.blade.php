@@ -31,8 +31,9 @@
                         <!--end::Wrapper-->
                         <!--begin::Description-->
                         <div class="fs-5 fw-semibold text-gray-600">
-                            <form action="{{ route('kirim-pesan-whatsapp-tanpa-simpan-nomor.store') }}" action="post">
-                                <input type="text" class="form-control" placeholder="example. 082453786476" required/>
+                            <form action="{{ route('kirim-pesan-whatsapp-tanpa-simpan-nomor.store') }}" method="post" target="_blank">
+                                @csrf
+                                <input type="text" class="form-control" placeholder="example. 082453786476" name="number" required/>
 
                                 <div class="d-grid gap-2 mt-4">
                                     <button type="submit" class="btn btn-success hover-scale">Kirim Pesan</button>

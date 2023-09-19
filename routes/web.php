@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\WhatsappController::class, 'index'])->name('home');
 
 Route::resource('kirim-pesan-whatsapp-tanpa-simpan-nomor', App\Http\Controllers\WhatsappController::class);
