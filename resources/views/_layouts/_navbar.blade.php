@@ -14,10 +14,10 @@
                     </button>
                     <!--end::Header toggle-->
                     <!--begin::Logo-->
-                    <a href="../../demo35/dist/index.html" class="d-flex align-items-center me-lg-20 me-5">
-                        <img alt="Logo" src="assets/media/logos/demo-35-small.svg" class="h-20px d-sm-none d-inline" />
-                        <img alt="Logo" src="assets/media/logos/demo-35.svg" class="h-20px h-lg-25px theme-light-show d-none d-sm-inline" />
-                        <img alt="Logo" src="assets/media/logos/demo-35-dark.png" class="h-20px h-lg-25px theme-dark-show d-none d-sm-inline" />
+                    <a href="{{ route('home') }}" class="d-flex align-items-center me-lg-20 me-5">
+                        <img alt="Logo" src="{{ asset('assets/media/logos/logo-small.png') }}" class="h-20px d-sm-none d-inline" />
+                        <img alt="Logo" src="{{ asset('assets/media/logos/logo-light.png') }}" class="h-20px h-lg-25px theme-light-show d-none d-sm-inline" />
+                        <img alt="Logo" src="{{ asset('assets/media/logos/logo-dark.png') }}" class="h-20px h-lg-25px theme-dark-show d-none d-sm-inline" />
                     </a>
                     <!--end::Logo-->
                 </div>
