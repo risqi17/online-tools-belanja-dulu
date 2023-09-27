@@ -4,6 +4,14 @@
     Kirim whatsapp tanpa simpan nomor hp
 @endsection
 
+@section('meta-description')
+Jelajahi Tool Online Berkualitas Tinggi: Konverter & Kirim Pesan WhatsApp Tanpa Simpan Nomor. Solusi Praktis untuk Kebutuhan Anda. Dapatkan Akses Gratis!
+@endsection
+
+@section('meta-keyword')
+Kirim Whatsapp, Tool Online, Converter Online, Kirim Pesan WhatsApp, Tanpa Simpan Nomor, Konverter Gratis, Layanan Online Gratis, Alat Konversi, Pesan WhatsApp Tanpa Simpan Kontak, Aplikasi Konversi Online, Peralatan Internet Gratis
+@endsection
+
 @section('content')
     <!--begin::Content wrapper-->
     <div class="d-flex flex-column flex-column-fluid">
